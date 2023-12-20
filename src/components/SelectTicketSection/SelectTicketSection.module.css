@@ -1,0 +1,66 @@
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color: var(--white);
+    max-width: 1440px;
+}
+
+.paymentBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--blue-light);
+}
+
+.paymentWrapper {
+    padding: 16px 60px;
+}
+
+.priceContainer {
+    background-color: var(--darken-blue);
+}
+
+.ticketsBlockTitle {
+    font-family: Montserrat-SemiBold, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.selectedSeatsBlock {
+    margin-top: 40px;
+}
+
+.selectedSeatItem {
+    border: 1px solid var(--dark-brown);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.removeSelectedSeatButton {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.movieInfoBlock {
+    display: flex;
+    align-items: self-start;
+    gap: 18px;
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.image {
+    width: 135px;
+    height: 180px;
+}

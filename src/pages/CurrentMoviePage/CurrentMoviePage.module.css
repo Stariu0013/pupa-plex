@@ -1,0 +1,80 @@
+.container {
+    width: 100%;
+}
+
+.wrapper {
+    padding: 0 100px;
+}
+
+.bannerBlock {
+    margin-top: -120px;
+}
+
+.bannerImage {
+    width: 100%;
+    height: 784px;
+}
+
+.bannerContainer {
+
+}
+
+.movieImage {
+    width: 242px;
+    height: 323px;
+}
+
+.movieDetailsBlock {
+    color: var(--white);
+    margin: 100px 0 150px;
+}
+
+.sectionTitle {
+    font-size: 56px;
+    color: var(--light-brown);
+    position: relative;
+}
+
+.sectionTitle::before {
+    content: "";
+    position: absolute;
+    left: 220px;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: var(--light-brown);
+}
+
+.movieDetails {
+    display: flex;
+    gap: 52px;
+}
+
+.detailedInfoBlock {
+    display: flex;
+    gap: 30px;
+}
+
+.detailedInfoList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 21px;
+
+    color: var(--white);
+}
+
+.detailedInfoListConcreted {
+    color: var(--light-brown);
+}
+
+.movieDetailsDescription {
+    margin-top: 50px;
+}
+
+.movieDetailsBtns {
+    display: flex;
+    gap: 23px;
+    margin-top: 20px;
+}

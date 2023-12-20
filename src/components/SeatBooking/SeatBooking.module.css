@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    margin-top: 60px;
+}
+
+.title {
+    color: var(--white);
+    font-size: 20px;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -50%;
+    transform: translateX(-30%);
+    width: 272px;
+    height: 3px;
+    background-color: var(--white);
+}
+
+.seatsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 320px;
+    height: 100%;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+}
+
+.seat[data-checked = true] {
+    background: var(--light-brown);
+}

@@ -1,0 +1,34 @@
+.navigationContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 120px;
+
+    padding: 0 100px;
+    position: relative;
+}
+
+.navigationContainerDarken {
+    background-color: var(--darken);
+}
+
+.logo {
+    width: 140px;
+    height: 48px;
+}
+
+.navigation {
+    display: flex;
+    gap: 53px;
+}
+
+.navigationItem {
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+}
+.navigationItem:hover {
+    color: var(--light-brown);
+}

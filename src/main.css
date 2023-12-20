@@ -1,0 +1,29 @@
+:root {
+    --light-brown: #C79848;
+    --dark-brown: #74602E;
+    --dark-blue: #232436;
+    --white: #fff;
+    --black: #000;
+    --darken: rgba(0, 0, 0, 0.56);
+    --darken-blue: rgba(0, 0, 0, 0.49);
+    --blue-light: #232436;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat-Medium", sans-serif;
+    font-weight: 500;
+    background-color: var(--black);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-weight: 700;
+}
+h1, h2, p {
+    margin: 0;
+}

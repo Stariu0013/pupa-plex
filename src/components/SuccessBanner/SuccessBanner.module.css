@@ -1,0 +1,41 @@
+.notification {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+}
+
+.notificationLogo {
+    width: 252px;
+    height: 252px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.notificationTitle {
+    font-size: 56px;
+    color: var(--light-brown);
+    margin: 0;
+}
+
+.notificationDescription {
+    color: var(--white);
+    font-size: 20px;
+    margin: 0;
+}
