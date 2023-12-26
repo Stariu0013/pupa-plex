@@ -15,6 +15,7 @@ const SeatBooking = ({ seats, onSeatClick, }) => {
                                 onClick={() => {
                                     onSeatClick(seat.id);
                                 }}
+                                data-col={seat?.col} data-row={seat?.row}
                                 key={seat.id}
                                 className={styles.seat} data-checked={seat.checked}/>
                         )

@@ -15,6 +15,7 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 100px;
+    gap: 10px;
     border-top: 1px solid var(--dark-brown);
     border-bottom: 1px solid var(--dark-brown);
 }
@@ -57,4 +58,12 @@
     justify-content: center;
     align-items: center;
     color: var(--light-brown);
+}
+
+@media (max-width: 768px) {
+    .footerContent {
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px;
+    }
 }

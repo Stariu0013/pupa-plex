@@ -64,3 +64,10 @@
     width: 135px;
     height: 180px;
 }
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+}

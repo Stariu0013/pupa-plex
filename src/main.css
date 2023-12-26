@@ -19,6 +19,16 @@ body {
     background-color: var(--black);
     overflow-x: hidden;
 }
+#root {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
 
 h1 {
     font-family: "Montserrat-Bold", sans-serif;

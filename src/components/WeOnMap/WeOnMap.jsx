@@ -5,7 +5,7 @@ import styles from "./WeOnMap.module.css";
 const WeOnMap = () => {
     return (
         <div className={styles.container}>
-            <h1 className={styles.sectionTitle}>Ми на карті</h1>
+            <h1 className={styles.sectionTitle}><div className={styles.sectionTitleLine}></div> Ми на карті</h1>
             <div className={styles.mapImageBlock}>
                 <div className={styles.mapAddressBlock}>
                     <p className={styles.mapAddressTitle}>Адреса:</p>

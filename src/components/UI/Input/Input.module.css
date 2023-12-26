@@ -4,15 +4,20 @@
     border: 1px solid var(--light-brown);
     border-radius: 5px;
     padding-left: 20px;
+    color: var(--light-brown);
     outline: none;
 }
 
 .input:focus {
-    color: var(--white);
+    color: var(--light-brown);
 }
 
 .inputTransparent {
     background-color: transparent;
     color: var(--dark-blue);
     border: 1px solid var(--dark-blue);
+}
+
+.inputTransparent:focus {
+    color: var(--white);
 }

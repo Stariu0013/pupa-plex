@@ -90,6 +90,8 @@ const SelectTicketSection = ({ closePopup, selectedTime, selectedHall, selectedD
                             selectedSeats?.map(seat => {
                                 return (
                                     <div className={styles.selectedSeatItem} key={seat.id}>
+                                        <span>{seat?.row} ряд</span>
+                                        <span>{seat?.col} місце</span>
                                         {seat?.price}
                                         <img src={CloseIcon} alt="Close icon" onClick={() => removeSelectedSeat(seat.id)} className={styles.removeSelectedSeatButton}/>
                                     </div>

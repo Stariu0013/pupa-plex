@@ -9,14 +9,14 @@ const Header = () => {
     const { pathname} = useLocation();
 
     return (
-        <header className={[styles.navigationContainer, pathname.length > 1 && styles.navigationContainerDarken].join(" ")}>
+        <header className={[styles.navigationContainer, pathname.length > 1 ? styles.navigationContainerDarken : ""].join(" ")}>
             <img className={styles.logo} src={Logo} alt="Pupa plex logo"/>
 
             <nav className={styles.navigation}>
                 <span><NavLink className={styles.navigationItem} to="/">Сеанси</NavLink></span>
-                <span><NavLink className={styles.navigationItem} to="/">Скоро у кіно</NavLink></span>
-                <span><NavLink className={styles.navigationItem} to="/">Про нас</NavLink></span>
-                <span><NavLink className={styles.navigationItem} to="/">Контакти</NavLink></span>
+                <span><NavLink className={styles.navigationItem} to="/feature-movies">Скоро у кіно</NavLink></span>
+                <span><NavLink className={styles.navigationItem} to="/about">Про нас</NavLink></span>
+                <span><NavLink className={styles.navigationItem} to="/contacts">Контакти</NavLink></span>
             </nav>
         </header>
     );

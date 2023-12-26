@@ -3,17 +3,30 @@ import {AppContext} from "../../App.jsx";
 
 const maxPrice = 200;
 const minPrice = 100;
+const seatsPerRow = 6;
 
 export const useSeatBooking = () => {
-    const {setSelectedSeat} = useContext(AppContext);
     const [seats, setSeats] = useState([]);
     const [selectedSeats, setSelectedSeats] = useState([]);
 
     useEffect(() => {
+        let counter = 0;
+
         const seatsArray = Array(30).fill(0).map((el, i) => {
+            const normalizedIndex = i + 1;
+            const remnantElement = normalizedIndex % seatsPerRow;
+
+            const column = remnantElement === 0 ? seatsPerRow : remnantElement;
+
+            if (remnantElement === 1) {
+                counter++;
+            }
+
             return {
-                id: i + 1,
+                id: normalizedIndex,
                 checked: false,
+                col: column,
+                row: counter,
                 price: getPrice(minPrice, maxPrice),
             }
         });

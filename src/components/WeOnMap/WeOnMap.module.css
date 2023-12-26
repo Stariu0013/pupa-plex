@@ -1,21 +1,28 @@
 .container {
-    width: 100%;
     margin: 100px 0;
 }
 
 .sectionTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-right: 100px;
     text-align: right;
     font-size: 56px;
     color: var(--light-brown);
+    white-space: nowrap;
+}
+.sectionTitleLine {
     position: relative;
+    height: 10px;
+    width: 100%;
 }
 
-.sectionTitle::before {
+.sectionTitleLine::after {
     content: "";
     position: absolute;
-    right: 24.5%;
-    top: 50%;
+    right: 1%;
+    top: 55%;
     width: 100%;
     height: 2px;
     background-color: var(--light-brown);
@@ -59,4 +66,17 @@
 
 .underlinedText {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 25px;
+    }
+    .sectionTitle {
+        font-size: 42px;
+    }
+    .mapImageBlock {
+        height: 500px;
+        margin-bottom: 50px;
+    }
 }

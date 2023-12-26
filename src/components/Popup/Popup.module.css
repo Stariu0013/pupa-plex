@@ -32,3 +32,12 @@
     width: 100%;
     padding-left: 200px;
 }
+
+@media (max-width: 768px) {
+    .popupHeader {
+        padding-left: 25px;
+    }
+    .popupContent {
+        padding-left: 25px;
+    }
+}

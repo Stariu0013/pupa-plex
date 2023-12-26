@@ -69,3 +69,13 @@
     height: 2px;
     background-color: var(--light-brown);
 }
+
+@media (max-width: 768px) {
+    .carouselContainer {
+        padding: 0 25px;
+    }
+
+    .sectionTitleBlock {
+        font-size: 42px;
+    }
+}
