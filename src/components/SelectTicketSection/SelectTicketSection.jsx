@@ -9,7 +9,7 @@ import {AppContext} from "../../App.jsx";
 import styles from "./SelectTicketSection.module.css";
 import Button from "../UI/Button/Button.jsx";
 import {CloseIcon} from "../../assets/imgs/index.js";
-import {buyTickets} from "../../api/moviesApi.js";
+// import {buyTickets} from "../../api/moviesApi.js";
 import SuccessBanner from "../SuccessBanner/SuccessBanner.jsx";
 
 const SelectTicketSection = ({ closePopup, selectedTime, selectedHall, selectedDay }) => {
@@ -37,19 +37,20 @@ const SelectTicketSection = ({ closePopup, selectedTime, selectedHall, selectedD
 
     const onBuyTicketsClick = async () => {
         if (nameInput.value && lastNameInput.value && emailInput.value && selectedSeats.length) {
-            const obj = {
-                name: nameInput.value,
-                lastname: lastNameInput.value,
-                email: emailInput.value,
-                seats: selectedSeats,
-                price: totalPrice,
-            };
+            // const obj = {
+            //     name: nameInput.value,
+            //     lastname: lastNameInput.value,
+            //     email: emailInput.value,
+            //     seats: selectedSeats,
+            //     price: totalPrice,
+            // };
 
-            buyTickets(obj).then(() => {
-                setIsBought(true);
-            }).finally(() => {
-                setIsBought(true);
-            });
+            setIsBought(true);
+            // buyTickets(obj).then(() => {
+            //
+            // }).finally(() => {
+            //     setIsBought(true);
+            // });
         };
     };
 
